@@ -8,7 +8,7 @@ module.exports = Joi.object({
         "place name": Joi.string().required(),
         longitude: Joi.string().required(),
         state: Joi.string().required(),
-        "state abbrevation": Joi.string().required(),
+        "state abbreviation": Joi.string().required(),
         latitude: Joi.string().required(),
     })).required(),
 });
