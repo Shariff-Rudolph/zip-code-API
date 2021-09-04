@@ -6,7 +6,6 @@ describe('api.zippopotam.us/{country-abbreviation}/{zip-code}', function () {
             url: 'api.zippopotam.us/us/90210',
             method: 'GET',
         }).then((response) => {
-            const { items } = response.body;
             const { error } = schema.validate(response.body);
             expect(error).to.be.undefined;
             expect(response.body).to.have.property('post code').to.contain(90210);
