@@ -1,4 +1,4 @@
-const schema = require('../schemas/united-states');
+const schema = require('../schemas/country-zip-code');
 
 describe('api.zippopotam.us/{country-abbreviation}/{zip-code}', function () {
   it('Tests country abbreviation and zip code', function () {
